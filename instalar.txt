@@ -1,0 +1,9 @@
+
+npm i express @types/express 
+npm i cors @types/cors 
+npm i typescript @types/node ts-node-dev 
+npm i prisma @prisma/client
+npm i uuid @types/uuid
+
+
+
