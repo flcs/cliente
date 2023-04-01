@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "debug": "tsnd --respawn --preserve-symlinks --exit-child --inspect=0.0.0.0  -- src/main/server.ts",
+    "start": "tsnd --respawn --transpile-only --ignore-watch node_modules --no-notify --exit-child src/main/server.ts",
+    "db:migrate": "npx prisma migrate dev --create-only --name ",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,5 +26,9 @@
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.2",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.0.2",
+    "prisma-erd-generator": "^1.5.4"
   }
 }
