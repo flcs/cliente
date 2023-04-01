@@ -1,35 +1,36 @@
 import { PrismaClient } from '@prisma/client';
 import { ICliente } from '../entity/cliente';
+import { prisma as banco } from '../main/database';
 
 class ClienteRepository {
-  private prisma: PrismaClient;
+  // private prisma: PrismaClient;
 
   constructor() {
-    this.prisma = new PrismaClient();
+    // this.prisma = new PrismaClient();
   }
 
   async listarClientes(): Promise<ICliente[]> {
-    const clientes = await this.prisma.cliente.findMany();
+    const clientes = await banco.cliente.findMany();
     return clientes;
   }
 
   async buscarClientePorId(id: string): Promise<ICliente | null> {
-    const cliente = await this.prisma.cliente.findUnique({ where: { id } });
+    const cliente = await banco.cliente.findUnique({ where: { id } });
     return cliente;
   }
 
   async buscarClientePorEmail(email: string): Promise<ICliente | null> {
-    const cliente = await this.prisma.cliente.findUnique({ where: { email } });
+    const cliente = await banco.cliente.findUnique({ where: { email } });
     return cliente;
   }
 
   async adicionarCliente(cliente: ICliente): Promise<ICliente> {
-    const novoCliente = await this.prisma.cliente.create({ data: cliente });
+    const novoCliente = await banco.cliente.create({ data: cliente });
     return novoCliente;
   }
 
   async atualizarCliente(id: string, clienteAtualizado: ICliente): Promise<ICliente | null> {
-    const cliente = await this.prisma.cliente.update({
+    const cliente = await banco.cliente.update({
       where: { id },
       data: clienteAtualizado,
     });
@@ -38,7 +39,7 @@ class ClienteRepository {
 
   async removerCliente(id: string): Promise<boolean> {
     try {
-      await this.prisma.cliente.delete({ where: { id } });
+      await banco.cliente.delete({ where: { id } });
       return true;
     } catch (error) {
       console.log(error);
