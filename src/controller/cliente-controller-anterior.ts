@@ -1,19 +1,28 @@
 import { Request, Response } from 'express';
-import { ClienteUseCase } from '../usecase/cliente/cliente-usecase';
+import { AdicionarClienteUseCase } from '../usecase/cliente/adicionar-cliente-usecase';
+import { AtualizarClienteUseCase } from '../usecase/cliente/atualizar-cliente-usecase';
+import { DeletarClienteUseCase } from '../usecase/cliente/deletar-cliente-usecase';
+import { ConsultarClienteUseCase } from '../usecase/cliente/consultar-cliente-usecase';
 import { ICliente } from '../entity/cliente';
 import { ClienteRepository } from '../repository/cliente-repository';
 
 export class ClienteController {
   private readonly clienteRepository: ClienteRepository;
-  private readonly clienteUseCase: ClienteUseCase;
+  private readonly adicionarClienteUseCase: AdicionarClienteUseCase;
+  private readonly atualizarClienteUseCase: AtualizarClienteUseCase;
+  private readonly deletarClienteUseCase: DeletarClienteUseCase;
+  private readonly consultarClienteUseCase: ConsultarClienteUseCase;
 
   constructor() {
     this.clienteRepository = new ClienteRepository();
-    this.clienteUseCase = new ClienteUseCase(this.clienteRepository);
+    this.adicionarClienteUseCase = new AdicionarClienteUseCase(this.clienteRepository);
+    this.atualizarClienteUseCase = new AtualizarClienteUseCase(this.clienteRepository);
+    this.deletarClienteUseCase = new DeletarClienteUseCase(this.clienteRepository);
+    this.consultarClienteUseCase = new ConsultarClienteUseCase(this.clienteRepository);
   }
 
   async index(req: Request, res: Response) {
-    const resposta = await this.clienteUseCase.listar();
+    const resposta = await this.consultarClienteUseCase.listar();
     if (!resposta) {
       return res.status(404).json({ message: 'Cliente não encontrado' });
     }
@@ -26,7 +35,7 @@ export class ClienteController {
 
   async consultarPorId(req: Request, res: Response) {
     try {
-      const cliente = await this.clienteUseCase.consultarPorId(req.params.id);
+      const cliente = await this.consultarClienteUseCase.consultarPorId(req.params.id);
 
       if (!cliente) {
         return res.status(404).json({ message: 'Cliente não encontrado' });
@@ -41,7 +50,7 @@ export class ClienteController {
 
   async consultarPorEmail(req: Request, res: Response) {
     try {
-      const cliente = await this.clienteUseCase.consultarPorEmail(req.params.email);
+      const cliente = await this.consultarClienteUseCase.consultarPorEmail(req.params.email);
 
       if (!cliente) {
         return res.status(404).json({ message: 'Cliente não encontrado' });
@@ -57,7 +66,7 @@ export class ClienteController {
   async adicionarCliente(req: Request, res: Response) {
     const cliente = req.body as ICliente;
 
-    const resposta = await this.clienteUseCase.adicionarCliente(cliente);
+    const resposta = await this.adicionarClienteUseCase.adicionarCliente(cliente);
     if (resposta instanceof Error) {
       console.log(resposta.message)
       return res.status(400).json({ message: resposta.message });
@@ -70,7 +79,7 @@ export class ClienteController {
   async atualizarCliente(req: Request, res: Response) {
     try {
       const clienteAtualizado = req.body as ICliente;
-      const cliente = await this.clienteUseCase.atualizarCliente(clienteAtualizado);
+      const cliente = await this.atualizarClienteUseCase.atualizarCliente(clienteAtualizado);
       return res.status(200).json(cliente);
     } catch (error) {
       console.error(error);
@@ -81,12 +90,12 @@ export class ClienteController {
   async deletarCliente(req: Request, res: Response) {
     try {
       const id = req.params.id;
-      await this.clienteUseCase.deletarCliente(id);
+      await this.deletarClienteUseCase.deletarCliente(id);
       return res.status(204).send();
     } catch (error) {
       console.error(error);
       return res.status(500).json({ message: 'Erro ao deletar cliente' });
     }
   }
-}
 
+}
