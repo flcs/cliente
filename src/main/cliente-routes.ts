@@ -16,6 +16,9 @@ clienteRouter.get('/cliente/email/:email', (req, res) => clienteController.consu
 // Rota para adicionar um cliente
 clienteRouter.post('/cliente', (req, res) => clienteController.adicionarCliente(req, res));
 
+// Rota para adicionar um cliente
+clienteRouter.patch('/cliente', (req, res) => clienteController.atualizarCliente(req, res));
+
 // Rota para atualizar um cliente
 clienteRouter.put('/cliente', (req, res) => clienteController.atualizarCliente(req, res));
 
