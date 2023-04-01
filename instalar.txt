@@ -1,9 +1,87 @@
 
+no VSCode, adicionar a REST Client, ENV, Jest, Jest Runner, Live Server, Material Icon, Reload, 
+
+
 npm i express @types/express 
 npm i cors @types/cors 
 npm i typescript @types/node ts-node-dev 
-npm i prisma @prisma/client
+npm i prisma @prisma/client @prisma/cli
 npm i uuid @types/uuid
+
+npx prisma init --datasource-provider postgresql
+
+no arquivo prisma/schema.prisma:
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int     @default(autoincrement()) @id
+  email     String  @unique
+  name      String
+  telefone  String?
+
+  @@map("users")
+}
+
+model Cliente {
+    id          String  @id @default(uuid()) 
+    nome        String
+    telefone    String?
+    email       String @unique
+    observacoes String
+
+    @@map("clientes")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+===========================
+
+no arquivo docker-compose.yml:
+version: '3.8'
+services:
+  postgres:
+    image: postgres:10.3
+    restart: always
+    environment:
+      - POSTGRES_USER=sammy
+      - POSTGRES_PASSWORD=your_password
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+volumes:
+  postgres:
+===============================
+
+no arquivo prisma/.env:
+POSTGRES_USER=sammy
+POSTGRES_PASSWORD=your_password
+POSTGRES_DB=my-blog
+DATABASE_URL="postgresql://sammy:your_password@localhost:5432/my-blog?schema=public"
+===================
+
+executar:
+$ docker-compose up -d
+$ docker ps
+
+
+"scripts": {
+    "db:migrate": "npx prisma migrate dev --create-only --name ",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push"
+}
+
+
+npx prisma migrate dev --name "init"
+
+npx prisma migrate dev status
+
 
 
 
