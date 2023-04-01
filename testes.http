@@ -1,0 +1,99 @@
+@endereco = http://localhost:3000
+
+####################
+
+GET {{endereco}}/cliente/index HTTP/1.1
+Content-Type: application/json
+
+####################
+
+GET {{endereco}}/cliente/1 HTTP/1.1
+Content-Type: application/json
+
+####################
+
+GET {{endereco}}/cliente/aad9306e-777e-4dad-a7ab-6a505e3d1c7e HTTP/1.1
+Content-Type: application/json
+
+####################
+
+GET {{endereco}}/cliente/email/paulo@email.com HTTP/1.1
+Content-Type: application/json
+
+####################
+
+POST {{endereco}}/cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "telefone": "21 99999-0001",
+    "email": "joao@email.com",
+    "observacoes": "bla bla bla"
+}
+
+####################
+
+POST {{endereco}}/cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Erro",
+    "email": "joao@email.com"
+}
+
+####################
+
+POST {{endereco}}/cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Paulo",
+    "telefone": "22 99999-0002",
+    "email": "paulo@email.com",
+    "observacoes": "ble ble ble"
+}
+
+####################
+
+POST {{endereco}}/cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "email": "joao2@email.com"
+}
+
+####################
+
+PATCH {{endereco}}/cliente/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "email": "joao@email.com",
+}
+
+####################
+
+PUT {{endereco}}/cliente/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "cpf": "12345678901",
+    "email": "joao@email.com",
+    "telefone": "1234567890"
+}
+
+####################
+
+DELETE {{endereco}}/cliente/1 HTTP/1.1
+Content-Type: application/json
+
+####################
+
+    
+
+
+
