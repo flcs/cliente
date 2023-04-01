@@ -1,4 +1,4 @@
-import { ICliente } from '../../entity/cliente';
+import { Cliente } from '../../entity/cliente';
 import { ClienteRepository } from '../../repository/cliente-repository';
 
 import { v4 as uuidv4 } from 'uuid';
@@ -22,7 +22,7 @@ interface ClienteResponse {
 class ClienteUseCase {
   constructor(private readonly clienteRepository: ClienteRepository) { }
 
-  async listar(): Promise<ICliente[] | Error> {
+  async listar(): Promise<Cliente[] | Error> {
     try {
       const clientes = await this.clienteRepository.listarClientes();
       return clientes;
@@ -31,7 +31,7 @@ class ClienteUseCase {
     }
   }
 
-  async consultarPorId(id: string): Promise<ICliente | Error> {
+  async consultarPorId(id: string): Promise<Cliente | Error> {
     try {
       const cliente = await this.clienteRepository.buscarClientePorId(id);
       if (!cliente) {
@@ -43,7 +43,7 @@ class ClienteUseCase {
     }
   }
 
-  async consultarPorEmail(email: string): Promise<ICliente | Error> {
+  async consultarPorEmail(email: string): Promise<Cliente | Error> {
     try {
       const cliente = await this.clienteRepository.buscarClientePorEmail(email);
       if (!cliente) {
