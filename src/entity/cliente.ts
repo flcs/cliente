@@ -1,5 +1,5 @@
 
-interface ICliente {
+interface Cliente {
     id: string;
     nome: string;
     telefone: string;
@@ -7,4 +7,4 @@ interface ICliente {
     observacoes: string;
 }
 
-export { ICliente }
+export { Cliente }
