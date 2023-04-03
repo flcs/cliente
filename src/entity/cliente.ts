@@ -1,10 +1,10 @@
 
 interface Cliente {
-    id: string;
+    id: number;
     nome: string;
-    telefone: string;
+    telefone?: string | null;
     email: string;
-    observacoes: string;
+    observacoes?: string | null;
 }
 
 export { Cliente }

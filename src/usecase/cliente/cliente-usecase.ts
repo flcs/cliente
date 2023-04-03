@@ -1,76 +1,117 @@
-import { Cliente } from '../../entity/cliente';
+import { Cliente, tId } from '../../entity/cliente';
 import { ClienteRepository } from '../../repository/cliente-repository';
 
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 interface ClienteDTO {
-  id: string;
+  id: number;
   nome: string;
-  telefone: string;
+  telefone?: string | null;
   email: string;
-  observacoes: string;
+  observacoes?: string | null;
 }
 
 interface ClienteResponse {
-  id: string;
+  id: number;
   nome: string;
-  telefone: string;
+  telefone?: string | null;
   email: string;
-  observacoes: string;
+  observacoes?: string | null;
 }
 
 class ClienteUseCase {
   constructor(private readonly clienteRepository: ClienteRepository) { }
 
   async listar(): Promise<Cliente[] | Error> {
-    try {
-      const clientes = await this.clienteRepository.listarClientes();
+    const clientes = await this.clienteRepository.listarClientes();
+    if (clientes instanceof Error) {
       return clientes;
-    } catch (error: any) {
-      return new Error(`Erro ao listar clientes: ${error.message}`);
     }
+    return clientes;
   }
 
-  async consultarPorId(id: string): Promise<Cliente | Error> {
-    try {
-      const cliente = await this.clienteRepository.buscarClientePorId(id);
-      if (!cliente) {
-        return new Error('Cliente não encontrado');
-      }
-      return cliente;
-    } catch (error: any) {
-      return new Error(`Erro ao consultar cliente por id: ${error.message}`);
+  async obter_quantidade_clientes(): Promise<number | Error> {
+    const quantidade = await this.clienteRepository.quantidadeClientes();
+    if (quantidade instanceof Error) {
+      return quantidade;
     }
+    return quantidade;
+  }
+
+  async consultarPorId(id: tId): Promise<Cliente | Error> {
+    const cliente = await this.clienteRepository.buscarClientePorId(id);
+    if (cliente instanceof Error) {
+      return cliente;
+    }
+    if (!cliente) {
+      return new Error('Cliente não encontrado');
+    }
+    return cliente;
   }
 
   async consultarPorEmail(email: string): Promise<Cliente | Error> {
-    try {
-      const cliente = await this.clienteRepository.buscarClientePorEmail(email);
-      if (!cliente) {
-        return new Error('Email não encontrado');
-      }
+    const cliente = await this.clienteRepository.buscarClientePorEmail(email);
+    if (cliente instanceof Error) {
       return cliente;
-    } catch (error: any) {
-      return new Error(`Erro ao consultar cliente por email: ${error.message}`);
     }
+    if (!cliente) {
+      return new Error('Email não encontrado');
+    }
+    return cliente;
+  }
+
+
+  async obter_pagina(paginaAtual: number, itensPorPagina: number): Promise<Cliente[] | Error> {
+    const clientes = await this.clienteRepository.getPaginaClientes(paginaAtual, itensPorPagina);
+    if (clientes instanceof Error) {
+      return clientes;
+    }
+    return clientes;
+  }
+
+  async adicionarCliente(clienteDTO: ClienteDTO): Promise<ClienteResponse | Error> {
+    let novoCliente = {
+      ...clienteDTO,
+    };
+    // novoCliente.id = uuidv4();
+
+    const existe = await this.clienteRepository.buscarClientePorEmail(clienteDTO.email);
+    if (existe instanceof Error) {
+      return existe;
+    }
+    if (existe) {
+      return new Error('Email já cadastrado');
+    }
+
+    const clienteAdicionado = await this.clienteRepository.adicionarCliente(novoCliente);
+    if (clienteAdicionado instanceof Error) {
+      return clienteAdicionado;
+    }
+    if (!clienteAdicionado) {
+      return new Error('Erro ao adicionar');
+    }
+    return clienteAdicionado;
   }
 
   async atualizarCliente(clienteDTO: ClienteDTO): Promise<ClienteResponse | Error> {
 
     const existe = await this.clienteRepository.buscarClientePorId(clienteDTO.id);
+    if (existe instanceof Error) {
+      return existe;
+    }
     if (!existe) {
       return new Error('Cliente não encontrado');
     }
-
     const cliente = await this.clienteRepository.buscarClientePorEmail(clienteDTO.email);
-    if (cliente && cliente.id !== clienteDTO.id) {
+    if (cliente instanceof Error) {
+      return cliente;
+    }
+    if (cliente && (cliente.id !== clienteDTO.id)) {
       return new Error('Email já cadastrado');
     }
-    let clienteAtualizado: ClienteResponse | null;
-    try {
-      clienteAtualizado = await this.clienteRepository.atualizarCliente(clienteDTO.id, clienteDTO);
-    } catch (error: any) {
-      return new Error(error.message);
+    const clienteAtualizado = await this.clienteRepository.atualizarCliente(clienteDTO.id, clienteDTO);
+    if (clienteAtualizado instanceof Error) {
+      return clienteAtualizado;
     }
     if (!clienteAtualizado) {
       return new Error('Erro ao atualizar cliente');
@@ -78,36 +119,20 @@ class ClienteUseCase {
     return clienteAtualizado;
   }
 
-  async adicionarCliente(clienteDTO: ClienteDTO): Promise<ClienteResponse | Error> {
-    let novoCliente = {
-      ...clienteDTO,
-    };
-    novoCliente.id = uuidv4();
-
-    const existe = await this.clienteRepository.buscarClientePorEmail(clienteDTO.email);
-    if (existe) {
-      return new Error('Email já cadastrado');
-    }
-
-    let clienteAdicionado: ClienteResponse;
-    try {
-      clienteAdicionado = await this.clienteRepository.adicionarCliente(novoCliente);
-    } catch (error: any) {
-      return new Error(`Erro ao adicionar cliente: ${error.message}`);
-    }
-
-    return clienteAdicionado;
-  }
-
-  async deletarCliente(id: string): Promise<boolean | Error> {
+  async deletarCliente(id: tId): Promise<boolean | Error> {
     const existe = await this.clienteRepository.buscarClientePorId(id);
-    if (!existe) {
-      return new Error('Cliente não encontrado');
+    if (existe instanceof Error) {
+      return existe;
     }
-    try {
-      await this.clienteRepository.removerCliente(id);
-    } catch (error: any) {
-      return new Error(error.message);
+    if (!existe) {
+      return new Error('Id não encontrado');
+    }
+    const retorno = await this.clienteRepository.removerCliente(id);
+    if (retorno instanceof Error) {
+      return retorno;
+    }
+    if (!retorno) {
+      return new Error('Erro ao remover');
     }
     return true;
   }
