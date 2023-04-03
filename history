@@ -1,0 +1,1000 @@
+   63  npm init -y -w ../react-router/
+   64  cd -
+   65  vi package.json 
+   66  cd -
+   67  npm init -y -w ../react-router/
+   68  vi package.json 
+   69  npm i
+   70  ls -la
+   71  ls -la node_modules/
+   72  rm -fr node_modules/
+   73  ls -la ..
+   74  ls -la
+   75  vi package.json 
+   76  npm init -y -w ../Castiglioni
+   77  npm init -y -w ../lista_tarefas/
+   78  vi package.json 
+   79  ls -la
+   80  ls -la node_modules/
+   81  ls -la ..
+   82  npm init -y -w ../react_persist_login
+   83  ls -la ..
+   84  npm init -y -w ../react_protected_routes
+   85  vi ../react_protected_routes/package.json 
+   86  npm init -y -w ../react_protected_routes
+   87  ls -la ..
+   88  npm init -y -w ../react-router
+   89  ls -la ..
+   90  npm init -y -w ../react-routes-transition
+   91  ls -la ..
+   92  npm init -y -w ../react-ts-vitest-template/
+   93  ls -la ..
+   94  npm init -y -w ../rtl01
+   95  ls -la ..
+   96  npm init -y -w ../RTL_ViTest
+   97  ls -la ..
+   98  npm init -y -w ../tdd-vite-windi-crud
+   99  ls -la ..
+  100  npm init -y -w ../youtube-react-test-component
+  101  vi ../youtube-react-test-component/package.json 
+  102  npm init -y -w ../youtube-react-test-component
+  103  ls -la
+  104  ls node_modules/
+  105  ls -la node_modules/
+  106  mc
+  107  cd ../Castiglioni/
+  108  ls -la
+  109  cd react_matheus01/
+  110  ls -la
+  111  vi package.json 
+  112  ls -la
+  113  cd ..
+  114  mv react_matheus01/ ..
+  115  cd ../monorepo/
+  116  npm init -y -w ../react_matheus01
+  117  mc
+  118  cd ..
+  119  rm -fr monorepo/
+  120  mkdir monorepo
+  121  cd monorepo/
+  122  cd ..
+  123  ls -lart
+  124  rm -fr react-router/
+  125  cd monorepo/
+  126  history
+  127  vi monta_monorepo.sh
+  128  chmod +x monta_monorepo.sh
+  129  ./monta_monorepo.sh
+  130  vi monta_monorepo.sh
+  131  ls -la
+  132  npm init -y
+  133  ./monta_monorepo.sh
+  134  mc
+  135  ls -la
+  136  vi package.json 
+  137  npm i
+  138  ls -la
+  139  cd node_modules/
+  140  ls -la
+  141  mc
+  142  npm -ws i
+  143  mc
+  144  cd ..
+  145  vi pnpm-workspace.yaml
+  146  vi pnpm-workspace.yaml
+  147  cd ..
+  148  rm -fr monorepo
+  149  cd ..
+  150  mkdir storepath
+  151  pnpm store path /home/fernando/proj/storepath
+  152  ls -la /home/fernando/.local/share/pnpm/store/
+  153  ls -la /home/fernando/.local/share/pnpm/store/v3/
+  154  ls -la /home/fernando/.local/share/pnpm/store/v3/files/
+  155  ls -la /home/fernando/.local/share/pnpm/store/v3/files/00
+  156  cd /home/fernando/.local/share/pnpm/store/v3/files/00
+  157  cd ..
+  158  mc
+  159  cd /proj
+  160  cd ~/proj
+  161  pnpm -version
+  162  pnpm --version
+  163  node -version
+  164  node --version
+  165  cd React/
+  166  ls -la
+  167  ls -lart
+  168  cd react_matheus01/
+  169  ls -la
+  170  pnpm i
+  171  ls -la
+  172  cd node_modules/
+  173  ls -la
+  174  cd ..
+  175  npm start
+  176  ls -la
+  177  cd src
+  178  ls -la
+  179  code .
+  180  cd ..
+  181  cd ..
+  182  ls -la
+  183  cd ..
+  184  cd TestesAutomatizados/
+  185  ls -la
+  186  cd testes-eng-ex-04-2022-2/
+  187  ls -la
+  188  cd src/
+  189  ls -la
+  190  code .
+  191  tsc 
+  192  ls -la
+  193  tsc Domain/Service.ts 
+  194  npx tsc Domain/Service.ts 
+  195  npx tsc Domain/Service.ts 
+  196  npm i
+  197  npx tsc Domain/Service.ts 
+  198  ls -la
+  199  ls -lart
+  200  cd Domain/
+  201  ls -lart
+  202  pnpm add react react-hook-form yup
+  203  pnpm add axios
+  204  pnpm add react-dom
+  205  pnpm add react-router-dom
+  206  pnpm add @types/react
+  207  pnpm add @types/react-router-dom
+  208  pnpm add @types/react-dom
+  209  pnpm add @types/react
+  210  pnpm add bootstrap @types/bootstrap
+  211  pnpm add @types/react-router-dom
+  212  pnpm install react-router-dom @types/react-router-dom
+  213  npx tsc init
+  214  npx tsc --init
+  215  pnpm add typescript @types/node
+  216  pnpm add ts-node-dev
+  217  pnpm i react-dom react @types/react @types/react-dom
+  218  pnpm i
+  219  pnpm i react-router-dom @types/react-router-dom
+  220  pnpm i popperjs
+  221  pnpm i formik
+  222  pnpm i formik @types/formik
+  223  pnpm i react-router-dom
+  224  npm start
+  225  npm start
+  226  npm start
+  227  grep -ir originalPrompt &
+  228  grep -ir originalPrompt *
+  229  grep -ir originalPrompt *
+  230  grep -ir originalPrompt *
+  231  npm start
+  232  npm start
+  233  npm start
+  234  npm start
+  235  npm start
+  236  npm start
+  237  pnpm install --save-dev @types/testing-library__jest-dom
+  238  pnpm start
+  239  pnpm test
+  240  pnpm install express cors jsonwebtoken bcrypt dotenv
+  241  pnpm install --save-dev typescript jest ts-jest @types/jest supertest @types/supertest
+  242  pnpm install axios
+  243  pnpm start
+  244  pnpm start
+  245  pnpm i react-router-dom
+  246  pnpm i @types/react-router-dom
+  247  pnpm start
+  248  git init .
+  249  pnpm i express
+  250  pnpm i @types/express
+  251  npm start
+  252  pnpm start
+  253  pnpm i typescript @types/node
+  254  pnpm start
+  255  pnpm i typescript @types/node ts-node-dev
+  256  pnpm start
+  257  pnpm start
+  258  pnpm i cors
+  259  pnpm i @types/cors
+  260  pnpm i cors
+  261  pnpm start
+  262  pnpm start
+  263  npm start
+  264  npm start
+  265  npm start
+  266  npm start
+  267  pnpm i
+  268  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx
+  269  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core jquery
+  270  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core jquery popper.js
+  271  pnpm start
+  272  pnpm i
+  273  pnpm i @testing-library/dom jquery popper.js @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx
+  274  pnpm i @testing-library/dom jquery popper.js @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core
+  275  pnpm start
+  276  pnpm start
+  277  pnpm start
+  278  pnpm start
+  279  npm install axios bootstrap react-router-dom@5.2.0 react-hook-form react-toastify
+  280  npm i @types/react-router-dom
+  281  pnpm start
+  282  npm i
+  283  pnpm start
+  284  pnpm start
+  285  pnpm start
+  286  pnpm i
+  287  pnpm start
+  288  npm start
+  289  npm i axios
+  290  npm start
+  291  npm start
+  292  npm i react-router-dom @types/react-router-dom
+  293  npm i axios @types/axios
+  294  npm start
+  295  npm start
+  296  npm i react-toastify
+  297  npm i @types/react-toastify
+  298  npm start
+  299  npm start
+  300  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  301  git push
+  302  git push
+  303  git pull
+  304  git pull --rebase
+  305  git push
+  306  git pull
+  307  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  308  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  309  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  310   /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 39195 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  311   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 50331 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  312   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 50035 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  313   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51993 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  314   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 48677 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  315   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 46093 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  316   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 45993 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  317   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 60985 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  318   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 54427 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/GeradorDeRelatorio.py 
+  319   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 44321 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  320   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49811 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  321  git pull
+  322  git pull --rebase
+  323  git push
+  324  reset
+  325  git push
+  326  git add .
+  327  git status
+  328  git commit -m 'fix: variáveis ambientais para Linux'
+  329  git push 
+  330  env
+  331  cd polo
+  332  ls -la
+  333  cd ..
+  334  cd proj
+  335  cd polo/
+  336  cd programa/
+  337  cd AnalisadorDeLevedurasFase1/
+  338  ls -la
+  339  git pull
+  340  code .
+  341  git pull
+  342  npm init -y
+  343  npm i express @types/express typescript @types/node ts-node-dev
+  344  npm i express @types/express cors @types/cors typescript @types/node ts-node-dev
+  345  npm install prisma
+  346  npm install @types/prisma
+  347  npm install @prisma/client
+  348  npm i uuid @types/uuid
+  349  git init .
+  350  npm install axios react-paginate
+  351   /usr/bin/env 'NODE_OPTIONS=--require /usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js --inspect-publish-uid=http' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/tmp/node-cdp.80990-1.sock","deferredMode":false,"waitForDebugger":"","execPath":"/home/fernando/.nvm/versions/node/v19.4.0/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/tmp/node-debug-callback-16e7e111abd88702"}' /home/fernando/.nvm/versions/node/v19.4.0/bin/npm test -- --runInBand --watchAll=false --testNamePattern ProdutoController\ getProduto\ deve\ retornar\ um\ status\ 200\ se\ o\ produto\ for\ encontrado --runTestsByPath /home/fernando/proj/Engenharia/api_trab/src/controller/produto_controller.test.ts 
+  352   cd /home/fernando/proj/Engenharia/api_trab ; /usr/bin/env 'NODE_OPTIONS=--require /usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js --inspect-publish-uid=http' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/tmp/node-cdp.80990-5.sock","deferredMode":false,"waitForDebugger":"","execPath":"/home/fernando/.nvm/versions/node/v19.4.0/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/tmp/node-debug-callback-62f2f4dfc6abd5a8"}' /home/fernando/.nvm/versions/node/v19.4.0/bin/npm test -- --runInBand --watchAll=false --testNamePattern ProdutoController\ getProduto\ deve\ retornar\ um\ status\ 200\ se\ o\ produto\ for\ encontrado --runTestsByPath /home/fernando/proj/Engenharia/api_trab/src/controller/produto_controller.test.ts 
+  353  npm test
+  354  npm test
+  355  npm test
+  356   /usr/bin/env 'NODE_OPTIONS=--require /usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js --inspect-publish-uid=http' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/tmp/node-cdp.84258-4.sock","deferredMode":false,"waitForDebugger":"","execPath":"/home/fernando/.nvm/versions/node/v19.4.0/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/tmp/node-debug-callback-aca4c6e056c6031f"}' /home/fernando/.nvm/versions/node/v19.4.0/bin/npm test -- --runInBand --watchAll=false --testNamePattern ProdutoController\ getProduto\ deve\ retornar\ um\ produto\ com\ sucesso --runTestsByPath /home/fernando/proj/Engenharia/api_trab/src/controller/produto_controller.test.ts 
+  357  npm test
+  358  npm test
+  359  npm test
+  360  npm test
+  361  npm test
+  362  npm test
+  363  npm test
+  364  npm test
+  365  npx tsc --init
+  366  npm test
+  367  npm test --help
+  368  npm test -- --help
+  369  npm test -- --listTests
+  370  npm test -- --help
+  371  npm test -- --showCOnfig
+  372  npm test -- --showConfig
+  373  npm test -- --help
+  374  npm test -- --testNamePatter /users.test/
+  375  npm test -- --testNamePattern /users.test/
+  376  npm test -- --help
+  377  npm test -- --testMatch /users.test/
+  378  npm test -- --testMatch /users\.test\.js/
+  379  npm test -- --help
+  380  npm test -- --testRegex /users\.test\.js/
+  381  npm test -- --help
+  382  npm test -- /users\.test\.js/
+  383  npm test -- /test\/users\.test\.js/
+  384  npm test -- /users\.test/
+  385  npm test -- /users/
+  386  npm test -- /users/
+  387  npm i axios
+  388  npm test -- /users/
+  389  npm test -- /foo-bar-baz/
+  390  npm test -- /foo-bar-baz/
+  391  npm test -- /foo-bar-baz/
+  392  npm test -- /foo-bar-baz/
+  393  npm test -- /users/
+  394  npm test -- /produto_controller/
+  395  npm test -- --listTests
+  396  npm test -- /src/
+  397  npm start
+  398  npm test -- /src/
+  399  npm test -- /src/
+  400  npm test -- /src/
+  401  npm test -- /src/
+  402  npm test -- /src/
+  403  npm test -- /src/
+  404  npm test -- /src/
+  405  npm test -- /src/
+  406  npm test -- /src/
+  407  npm test -- /src/
+  408  npm test -- /src/
+  409  npm test -- /src/
+  410  npm start
+  411  npm run debug
+  412  npm run debug
+  413  npm run debug
+  414  npm run debug
+  415  fg
+  416  npm run debug
+  417  npm run debug
+  418  npm run debug
+  419  npm run start
+  420  npm start
+  421  npm i
+  422  npm run debug
+  423  npm run debug
+  424  npx prisma init
+  425  npx prisma --init
+  426  npx prisma init
+  427  docker-compose 
+  428  sudo apt install docker-compose
+  429  docker-compose up -d
+  430  docker ps
+  431  docker stop postgres
+  432  docker stop cliente_postgres_1
+  433  docker rm f1fec5b3e5a8
+  434  docker images
+  435  docker 
+  436  docker containers
+  437  docker ps
+  438  docker ls
+  439  docker-compose up -d
+  440  docker ps
+  441  npx prisma migrate save --experimental --create-db --name "init"
+  442  npx prisma introspect
+  443  npx prisma introspect
+  444  datasource db { provider = "postgresql" url = env("DATABASE_URL") } 
+  445  generator client { provider = "prisma-client-js" }    
+  446  npx prisma migrate save --experimental --create-db --name "init"
+  447  npx prisma migrate  --experimental --create-db --name "init"
+  448  npx prisma migrate --create-db --name "init"
+  449  npx prisma migrate
+  450  npx prisma migrate status
+  451  npx prisma migrate status
+  452  npx prisma migrate status
+  453   npx prisma migrate dev --name init
+  454  npm i -D prisma-erd-generator @mermaid-js/mermaid-cli
+  455   npx prisma migrate dev --name init
+  456   npx prisma migrate dev --name init
+  457   npx prisma migrate dev --name init
+  458  npx prisma migrate save  --create-db --name "init"
+  459  npx prisma migrate  --create-db --name "init"
+  460  npx prisma migrate dev  --create-db --name "init"
+  461  npx prisma migrate dev --name "init"
+  462  npx prisma migrate dev --name "init"
+  463  npx prisma migrate dev status"
+  464  npx prisma migrate dev status
+  465  npx prisma migrate dev status
+  466  npx prisma migrate dev status
+  467  npx prisma migrate dev status
+  468  npx prisma migrate dev status
+  469  npx prisma migrate dev status
+  470  npx prisma migrate dev status
+  471  npx prisma migrate dev status
+  472  npx prisma migrate dev status
+  473  npx prisma migrate dev status
+  474  npx prisma migrate dev
+  475  npx prisma migrate dev status
+  476  npx prisma migrate dev --name "corrigindo id"
+  477  npx prisma migrate dev --name "inicial"
+  478  npx prisma migrate dev --name "alterando"
+  479  npx prisma migrate dev --name "alterando"
+  480  npx prisma migrate dev --name "inicial"
+  481  npx prisma migrate dev --name "mudando id"
+  482  npx prisma migrate dev --name "mudando id"
+  483  npm run db:migrate -- teste
+  484  npm run db:migrate -- teste 
+  485  npm run db:migrate -- teste
+  486  npm run db:migrate -- adicionando telefone
+  487  npm run db:migrate -- observacoes_opcionais
+  488  npm run db:push
+  489  npm start
+  490  npm run db:generate
+  491  npm run db:generate
+  492  npm start
+  493  npm start
+  494  npm start
+  495  npm start
+  496  npm start
+  497  npm run db:migrate -- usuario
+  498  npm run db:migrate -- cliente
+  499  npm db:push
+  500  npm run db:push
+  501  npm start
+  502  npm start
+  503  npm run debug
+  504  npm start
+  505  npm start
+  506  npm list
+  507  npm start
+  508  reset
+  509  reset
+  510  npm start
+  511  npm run db:migrate -- id_numerico
+  512  npm run db:migrate -- id_numerico
+  513  npm run db:push
+  514  npm start
+  515  npm run db:migrate -- id_numerico
+  516  npm run db:push
+  517  npm start
+  518  npm start
+  519  npm run db:migrate -- id_numerico
+  520  npm run db:push
+  521  npm run db:migrate -- id_numerico
+  522  npm run db:push
+  523  npm start
+  524  npm run db:migrate -- id_numerico
+  525  npm run db:push
+  526  npm run db:migrate -- id_numerico
+  527  npm run db:migrate -- id_numerico
+  528  npm run db:migrate -- id_numerico
+  529  npm run db:migrate -- id_numerico
+  530  npx prisma init
+  531  npx prisma migrate
+  532  npx prisma dec migrate
+  533  npx prisma dev migrate
+  534  npx prisma dev generate 
+  535  npx prisma generate  dev
+  536  npx prisma db push
+  537  npm start
+  538  npm start
+  539  npm start
+  540  rm -fr node_modules
+  541  npm i
+  542  npx prisma init
+  543  npx prisma
+  544  generate
+  545  npx prisma generate
+  546  npx prisma migration
+  547  npx prisma migrate dev
+  548  npm start
+  549  npm start
+  550  npx tsnd src/main/seed.ts 
+  551  npm start
+  552  npm start
+  553  npm start
+  554  npm start
+  555  tsnd src/main/user-seed.ts 
+  556  npx tsnd src/main/user-seed.ts 
+  557  npm start
+  558  npx prisma init
+  559  npx prisma migrate
+  560  npx prisma migrate dev
+  561  history | grep psql
+  562  history > history
+   73  ps aux | grep sleep
+   74  npm i
+   75  OH
+   76  npm i
+   77  npm start
+   78  cd api
+   79  cd src/api
+   80  ls -la
+   81  cd ..
+   82  cd ..
+   83  ls -la
+   84  cd src
+   85  ls -la
+   86  :q
+   87  npm i
+   88  npm start
+   89  pnpm
+   90  apt-cache search pnpm
+   91  npm install -g pnpm
+   92  npm -g list
+   93  nvm
+   94  nvm list
+   95  pnpm -v
+   96  ls -la
+   97  pnpm i
+   98  ls -lart
+   99  ls -lart
+  100  sudo dpkg -i microsoft-edge-stable_111.0.1661.54-1_amd64.deb 
+  101  ps aux
+  102  ipython3
+  103  sqlite3 
+  104  cd proj
+  105  cd React/
+  106  ls -la
+  107  git clone https://github.com/gitdagray/react_protected_routes.git
+  108  cd react_protected_routes/
+  109  git remote -v
+  110  git remote remove origin
+  111  git remote add origin git@github.com:flcs/react_routes_protegidas.git
+  112  rm -fr .git
+  113  git init .
+  114  git remote add origin git@github.com:flcs/react_routes_protegidas.git
+  115  code .
+  116  cd ..
+  117  mv react_protected_routes/ react_protected_routes_pt
+  118  git clone git@github.com:flcs/react_protected_routes.git
+  119  mc
+  120  cd react_protected_routes
+  121  code .
+  122  cd ..
+  123  rm -fr react_protected_routes_pt/
+  124  git clone git@github.com:gitdagray/react_persist_login.git
+  125  rm -fr react_persist_login
+  126  git clone git@github.com:flcs/react_persist_login.git
+  127  cd react_persist_login/
+  128  ls -la
+  129  code .
+  130  mc
+  131  ls -la
+  132  rm -fr node_modules/
+  133  rm pnpm-lock.yaml 
+  134  ls -la
+  135  rm package-lock.json 
+  136  cd ..
+  137  ls -la
+  138  mc
+  139  pnpm --help
+  140  pnpm init
+  141  ls -lart
+  142  cd youtube-react-test-component/
+  143  ls -lart
+  144  cd 
+  145  ls -la
+  146  ls -lart
+  147  cd react_protected_routes/
+  148  pnpm link
+  149  pnpm link ..
+  150  ls -la
+  151  ls node_modules/
+  152  ls -la
+  153  ls -la node_modules/
+  154  ls -la ..
+  155  ls -lart
+  156  rm -fr node_modules
+  157  vi package.json 
+  158  pnpm install
+  159  ls -lart
+  160  ls -la node_modules/
+  161  cd ..
+  162  ls -lart
+  163  cd -
+  164  ls -lart
+  165  cd node_modules/
+  166  ls -lart
+  167  cd ..
+  168  rm -fr node_modules/
+  169  ls -lart
+  170  rm pnpm-lock.yaml 
+  171  ls -lart
+  172  cd ..
+  173  ls -lart
+  174  vi package.json 
+  175  vi package.json 
+  176  mkdir monorepo
+  177  mv package.json monorepo
+  178  cd monorepo
+  179  ls -la
+  180  mkdir node_modules
+  181  vi package.json 
+  182  cd ..
+  183  ls -lart
+  184  ls -lart > reacts.txt
+  185  vi reacts.txt 
+  186  cd monorepo/
+  187  npm init -y
+  188  ls -lart
+  189  vi package.json 
+  190  code .
+  191  npm init -y -w ../acesso_github -w ../react02 -w ../react-router -w ../react-ts-vitest-template -w ../tdd-vite-windi-crud -w ../react-router -w ../react-routes-transition
+  192  vi ~/.npm/_logs/2023-03-26T17_32_12_986Z-debug-0.log 
+  193  npm init -y -w ../acesso_github -w ../react02
+  194  ls -lart
+  195  vi package.json 
+  196  npm init -y -w ../acesso_github -w ../react02
+  197  npm init -y -w ../acesso_github -w ../react02 -w ../react-router
+  198  vi package.json 
+  199  npm init -y -w ../acesso_github -w ../react02 -w ../react-ts-vitest-template -w ../tdd-vite-windi-crud -w ../react-router -w ../react-routes-transition
+  200  vi package.json 
+  201  npm init -y -w ../acesso_github -w ../react02 -w ../react-ts-vitest-template -w ../tdd-vite-windi-crud -w ../react-routes-transition
+  202  vi package.json 
+  203  cd ../react-router/
+  204  vi package.json 
+  205  npm init -w ../react-router/
+  206  npm init -y -w ../react-router/
+  207  vi package.json 
+  208  cd -
+  209  cd -
+  210  npm init -y
+  211  vi package.json 
+  212  cd -
+  213  npm init -y -w ../react-router/
+  214  cd -
+  215  vi package.json 
+  216  cd -
+  217  npm init -y -w ../react-router/
+  218  vi package.json 
+  219  npm i
+  220  ls -la
+  221  ls -la node_modules/
+  222  rm -fr node_modules/
+  223  ls -la ..
+  224  ls -la
+  225  vi package.json 
+  226  npm init -y -w ../Castiglioni
+  227  npm init -y -w ../lista_tarefas/
+  228  vi package.json 
+  229  ls -la
+  230  ls -la node_modules/
+  231  ls -la ..
+  232  npm init -y -w ../react_persist_login
+  233  ls -la ..
+  234  npm init -y -w ../react_protected_routes
+  235  vi ../react_protected_routes/package.json 
+  236  npm init -y -w ../react_protected_routes
+  237  ls -la ..
+  238  npm init -y -w ../react-router
+  239  ls -la ..
+  240  npm init -y -w ../react-routes-transition
+  241  ls -la ..
+  242  npm init -y -w ../react-ts-vitest-template/
+  243  ls -la ..
+  244  npm init -y -w ../rtl01
+  245  ls -la ..
+  246  npm init -y -w ../RTL_ViTest
+  247  ls -la ..
+  248  npm init -y -w ../tdd-vite-windi-crud
+  249  ls -la ..
+  250  npm init -y -w ../youtube-react-test-component
+  251  vi ../youtube-react-test-component/package.json 
+  252  npm init -y -w ../youtube-react-test-component
+  253  ls -la
+  254  ls node_modules/
+  255  ls -la node_modules/
+  256  mc
+  257  cd ../Castiglioni/
+  258  ls -la
+  259  cd react_matheus01/
+  260  ls -la
+  261  vi package.json 
+  262  ls -la
+  263  cd ..
+  264  mv react_matheus01/ ..
+  265  cd ../monorepo/
+  266  npm init -y -w ../react_matheus01
+  267  mc
+  268  cd ..
+  269  rm -fr monorepo/
+  270  mkdir monorepo
+  271  cd monorepo/
+  272  cd ..
+  273  ls -lart
+  274  rm -fr react-router/
+  275  cd monorepo/
+  276  history
+  277  vi monta_monorepo.sh
+  278  chmod +x monta_monorepo.sh
+  279  ./monta_monorepo.sh
+  280  vi monta_monorepo.sh
+  281  ls -la
+  282  npm init -y
+  283  ./monta_monorepo.sh
+  284  mc
+  285  ls -la
+  286  vi package.json 
+  287  npm i
+  288  ls -la
+  289  cd node_modules/
+  290  ls -la
+  291  mc
+  292  npm -ws i
+  293  mc
+  294  cd ..
+  295  vi pnpm-workspace.yaml
+  296  vi pnpm-workspace.yaml
+  297  cd ..
+  298  rm -fr monorepo
+  299  cd ..
+  300  mkdir storepath
+  301  pnpm store path /home/fernando/proj/storepath
+  302  ls -la /home/fernando/.local/share/pnpm/store/
+  303  ls -la /home/fernando/.local/share/pnpm/store/v3/
+  304  ls -la /home/fernando/.local/share/pnpm/store/v3/files/
+  305  ls -la /home/fernando/.local/share/pnpm/store/v3/files/00
+  306  cd /home/fernando/.local/share/pnpm/store/v3/files/00
+  307  cd ..
+  308  mc
+  309  cd /proj
+  310  cd ~/proj
+  311  pnpm -version
+  312  pnpm --version
+  313  node -version
+  314  node --version
+  315  cd React/
+  316  ls -la
+  317  ls -lart
+  318  cd react_matheus01/
+  319  ls -la
+  320  pnpm i
+  321  ls -la
+  322  cd node_modules/
+  323  ls -la
+  324  cd ..
+  325  npm start
+  326  ls -la
+  327  cd src
+  328  ls -la
+  329  code .
+  330  cd ..
+  331  cd ..
+  332  ls -la
+  333  cd ..
+  334  cd TestesAutomatizados/
+  335  ls -la
+  336  cd testes-eng-ex-04-2022-2/
+  337  ls -la
+  338  cd src/
+  339  ls -la
+  340  code .
+  341  tsc 
+  342  ls -la
+  343  tsc Domain/Service.ts 
+  344  npx tsc Domain/Service.ts 
+  345  npx tsc Domain/Service.ts 
+  346  npm i
+  347  npx tsc Domain/Service.ts 
+  348  ls -la
+  349  ls -lart
+  350  cd Domain/
+  351  ls -lart
+  352  pnpm add react react-hook-form yup
+  353  pnpm add axios
+  354  pnpm add react-dom
+  355  pnpm add react-router-dom
+  356  pnpm add @types/react
+  357  pnpm add @types/react-router-dom
+  358  pnpm add @types/react-dom
+  359  pnpm add @types/react
+  360  pnpm add bootstrap @types/bootstrap
+  361  pnpm add @types/react-router-dom
+  362  pnpm install react-router-dom @types/react-router-dom
+  363  npx tsc init
+  364  npx tsc --init
+  365  pnpm add typescript @types/node
+  366  pnpm add ts-node-dev
+  367  pnpm i react-dom react @types/react @types/react-dom
+  368  pnpm i
+  369  pnpm i react-router-dom @types/react-router-dom
+  370  pnpm i popperjs
+  371  pnpm i formik
+  372  pnpm i formik @types/formik
+  373  pnpm i react-router-dom
+  374  npm start
+  375  npm start
+  376  npm start
+  377  grep -ir originalPrompt &
+  378  grep -ir originalPrompt *
+  379  grep -ir originalPrompt *
+  380  grep -ir originalPrompt *
+  381  npm start
+  382  npm start
+  383  npm start
+  384  npm start
+  385  npm start
+  386  npm start
+  387  pnpm install --save-dev @types/testing-library__jest-dom
+  388  pnpm start
+  389  pnpm test
+  390  pnpm install express cors jsonwebtoken bcrypt dotenv
+  391  pnpm install --save-dev typescript jest ts-jest @types/jest supertest @types/supertest
+  392  pnpm install axios
+  393  pnpm start
+  394  pnpm start
+  395  pnpm i react-router-dom
+  396  pnpm i @types/react-router-dom
+  397  pnpm start
+  398  git init .
+  399  pnpm i express
+  400  pnpm i @types/express
+  401  npm start
+  402  pnpm start
+  403  pnpm i typescript @types/node
+  404  pnpm start
+  405  pnpm i typescript @types/node ts-node-dev
+  406  pnpm start
+  407  pnpm start
+  408  pnpm i cors
+  409  pnpm i @types/cors
+  410  pnpm i cors
+  411  pnpm start
+  412  pnpm start
+  413  npm start
+  414  npm start
+  415  npm start
+  416  npm start
+  417  pnpm i
+  418  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx
+  419  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core jquery
+  420  pnpm i typescript  @testing-library/dom @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core jquery popper.js
+  421  pnpm start
+  422  pnpm i
+  423  pnpm i @testing-library/dom jquery popper.js @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx
+  424  pnpm i @testing-library/dom jquery popper.js @babel/plugin-syntax-flow @babel/plugin-transform-react-jsx @babel/core
+  425  pnpm start
+  426  pnpm start
+  427  pnpm start
+  428  pnpm start
+  429  npm install axios bootstrap react-router-dom@5.2.0 react-hook-form react-toastify
+  430  npm i @types/react-router-dom
+  431  pnpm start
+  432  npm i
+  433  pnpm start
+  434  pnpm start
+  435  pnpm start
+  436  pnpm i
+  437  pnpm start
+  438  npm start
+  439  npm i axios
+  440  npm start
+  441  npm start
+  442  npm i react-router-dom @types/react-router-dom
+  443  npm i axios @types/axios
+  444  npm start
+  445  npm start
+  446  npm i react-toastify
+  447  npm i @types/react-toastify
+  448  npm start
+  449  npm start
+  450  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  451  git push
+  452  git push
+  453  git pull
+  454  git pull --rebase
+  455  git push
+  456  git pull
+  457  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  458  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  459  /bin/python3 /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py
+  460   /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 39195 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  461   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 50331 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  462   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 50035 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  463   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 51993 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  464   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 48677 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  465   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 46093 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  466   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 45993 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  467   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 60985 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  468   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 54427 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/GeradorDeRelatorio.py 
+  469   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 44321 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  470   cd /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1 ; /usr/bin/env /bin/python3 /home/fernando/.vscode/extensions/ms-python.python-2023.5.10661006/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 49811 -- /home/fernando/proj/polo/programa/AnalisadorDeLevedurasFase1/AnalisadorDeLeveduras.py 
+  471  git pull
+  472  git pull --rebase
+  473  git push
+  474  reset
+  475  git push
+  476  git add .
+  477  git status
+  478  git commit -m 'fix: variáveis ambientais para Linux'
+  479  git push 
+  480  env
+  481  cd polo
+  482  ls -la
+  483  cd ..
+  484  cd proj
+  485  cd polo/
+  486  cd programa/
+  487  cd AnalisadorDeLevedurasFase1/
+  488  ls -la
+  489  git pull
+  490  code .
+  491  git pull
+  492  npm init -y
+  493  npm i express @types/express typescript @types/node ts-node-dev
+  494  npm i express @types/express cors @types/cors typescript @types/node ts-node-dev
+  495  npm install prisma
+  496  npm install @types/prisma
+  497  npm install @prisma/client
+  498  npm i uuid @types/uuid
+  499  git init .
+  500  npm install axios react-paginate
+  501  cd proj
+  502  ls -lart
+  503  cd Engenharia/
+  504  ls -la
+  505  cd api_trab/
+  506  ls -la
+  507  code .
+  508  cd ..
+  509  cd ..
+  510  ls -lart
+  511  cd gp
+  512  ls -la
+  513  cd cliente_front/
+  514  ls -la
+  515  code .
+  516  cd ../cliente
+  517  code .
+  518  cd -
+  519  code .
+  520  cd -
+  521  npm start
+  522  vi src/main/server.ts 
+  523  npm start
+  524  code .
+  525  docker ps
+  526  sudo docker exec cliente_postgres_1 psql -U postgres
+  527  sudo docker exec cliente_postgres_1 psql -U sammy
+  528  sudo docker exec cliente_postgres_1 psql -U sammy
+  529  sudo docker exec cliente_postgres_1 psql -U postgres
+  530  psql -h localhost -p 5432 -U sammy -W
+  531  cd ../cliente_front/
+  532  npm i rect-bootstrap @types/react-bootstrap
+  533  npm i react-bootstrap @types/react-bootstrap
+  534  ls -la
+  535  echo > xxx
+  536  rm xxx 
+  537  ps aux
+  538  history | grep psql
+  539  psql -h localhost -p 5432 -U sammy -W
+  540  psql -h localhost -p 5432 -U sammy -W
+  541  psql -h localhost -p 5432 -U sammy -W
+  542  psql -h localhost -p 5432 -U posegres -W
+  543  psql -h localhost -p 5432 -U sammy -W
+  544  psql -h localhost -p 5432 -U sammy -W
+  545  docker ps
+  546  docker stop
+  547  docker ddce77b1b230 stop
+  548  docker stop ddce77b1b230
+  549  docker start ddce77b1b230
+  550  psql -h localhost -p 5432 -U sammy -W
+  551  docker stop ddce77b1b230
+  552  docker rm ddce77b1b230
+  553  docker ps
+  554  docker-compose up -d
+  555  cd ../cliente
+  556  docker-compose up -d
+  557  psql -h localhost -p 5432 -U sammy -W
+  558  psql -h localhost -p 5432 -U sammy -W
+  559  psql -h localhost -p 5432 -U sammy -W
+  560  psql -h localhost -p 5432 -U sammy -W
+  561  psql -h localhost -p 5432 -U sammy -W
+  562  sudo docker exec cliente_postgres_1 psql -U postgres
+  563  sudo docker exec cliente_postgres_1 psql -U sammy
+  564  sudo docker exec cliente_postgres_1 psql -U sammy postgres
+  565  sudo docker exec cliente_postgres_1 psql -U postgres
+  566  psql -h localhost -p 5432 -U sammy -W
+  567  netstat -antup |less
+  568  netstat -antup |less
+  569  psql -h localhost -p 5432 -U sammy -W
+  570  psql -h localhost -p 5432 -U sammy -W
+  571  less history
+  572  history >> history 
